@@ -1,0 +1,63 @@
+@import url("reset.css");
+
+* {
+	color: black;
+}
+
+.menu-list * {
+	color: blue;
+}
+.intro {
+	color: dimgrey;
+}
+.intro.text-mark {
+	color: red;
+}
+.title,
+.title-menu {
+	color: green;
+}
+.fact span {
+	color: orange;
+}
+.fact-list .fact {
+	color: purple;
+}
+.fact > a {
+	color: blue;
+}
+.intro ~ p {
+	color: tomato;
+}
+.footer-link + p {
+	color: teal;
+}
+#link {
+	color: #4597f7;
+}
+
+/*Додаткове ДЗ*/
+ul > li {
+	color: red;
+}
+ul > li ~ li {
+	color: green;
+}
+ul > li > ul > li {
+	color: blue;
+}
+ul > li > ul > li ~ li {
+	color: orange;
+}
+ul > li > ul > li > span {
+	color: #a0f0fc;
+}
+ul > li > ul > li > ol > li {
+	color: #4597f7;
+}
+ul > li > ul > li > ol > li ~ li {
+	color: #5d5d5d;
+}
+ul > li > ul > li > ol > li > span {
+	color: #5d5d5d;
+}
