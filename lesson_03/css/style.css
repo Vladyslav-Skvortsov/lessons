@@ -32,6 +32,9 @@
 .footer-link + p {
 	color: teal;
 }
+[class*="__special-mark"] {
+	color: cyan;
+}
 #link {
 	color: #4597f7;
 }
