@@ -7,15 +7,18 @@
 .menu-list * {
 	color: blue;
 }
+.title,
+.menu-title {
+	color: green;
+}
 .intro {
 	color: dimgrey;
 }
 .intro.text-mark {
 	color: red;
 }
-.title,
-.title-menu {
-	color: green;
+.intro ~ p {
+	color: tomato;
 }
 .fact span {
 	color: orange;
@@ -25,9 +28,6 @@
 }
 .fact > a {
 	color: blue;
-}
-.intro ~ p {
-	color: tomato;
 }
 .footer-link + p {
 	color: teal;
