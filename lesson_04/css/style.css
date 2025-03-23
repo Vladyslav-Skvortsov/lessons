@@ -30,13 +30,15 @@ body {
 .game-name {
 	text-transform: uppercase;
 }
+
+/*тільки для того, щоб картинка була по центру, тому що по-іншому ми поки не можемо ;)*/
 .image-container {
 	text-align: center;
 }
 
 /*=================================================*/
 
-.additional-task-text {
+.additional-task {
 	font-family: "Poppins", sans-serif;
 	line-height: 1.5;
 	font-size: 18px;
