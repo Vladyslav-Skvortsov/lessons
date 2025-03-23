@@ -10,17 +10,30 @@
 	font-family: "Rubik Dirt", "Arial", sans-serif;
 	font-size: 2rem;
 	text-align: center;
+	letter-spacing: 3px;
+	white-space: nowrap;
+	word-spacing: 0.7rem;
 }
 .header-title span,
 .main-title span {
 	font: inherit;
 }
-
-.menu-list-item {
+.header-title span {
+	text-shadow: 5px 5px 10px #000;
+}
+.menu-list-item a {
 	color: blue;
+	line-height: 1.3rem;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
 }
 .main-list li {
 	font-family: "Tektur", "Arial", sans-serif;
+	line-height: 1.3rem;
+}
+.game-name {
+	text-transform: uppercase;
 }
 
 /*=================================================*/
