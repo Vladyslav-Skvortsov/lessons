@@ -1,55 +1,49 @@
 @import url("reset.css");
 @import url("fonts.css");
 
-* {
+body {
 	font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .header-title,
 .main-title {
-	font-family: "Rubik Dirt", "Arial", sans-serif;
+	font-family: "Rubik Dirt", sans-serif;
 	font-size: 2rem;
 	text-align: center;
-	letter-spacing: 3px;
+	letter-spacing: 0.1em;
 	white-space: nowrap;
 	word-spacing: 0.7rem;
 }
-.header-title span,
-.main-title span {
-	font: inherit;
-}
 .header-title span {
-	text-shadow: 5px 5px 10px #000;
+	text-shadow: 3px 3px 8px #000;
 }
 .menu-list-item a {
 	color: blue;
 	line-height: 1.3rem;
-	text-decoration: underline;
-	text-decoration-thickness: 2px;
+	text-decoration: underline 2px;
 	text-underline-offset: 3px;
 }
 .main-list li {
-	font-family: "Tektur", "Arial", sans-serif;
+	font-family: "Tektur", sans-serif;
 	line-height: 1.3rem;
 }
 .game-name {
 	text-transform: uppercase;
 }
+.image-container {
+	text-align: center;
+}
 
 /*=================================================*/
 
 .additional-task-text {
-	font-family: "Poppins", "Arial", sans-serif;
-	line-height: 150%;
+	font-family: "Poppins", sans-serif;
+	line-height: 1.5;
 	font-size: 18px;
 	color: #808080;
 }
 .paragraph-top {
-	font: inherit;
 	font-size: 20px;
 	font-weight: 500;
 	color: #1a1a1a;
-}
-.paragraph {
-	font: inherit;
 }
