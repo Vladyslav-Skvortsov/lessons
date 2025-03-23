@@ -1,0 +1,42 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+* {
+	font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.header-title,
+.main-title {
+	font-family: "Rubik Dirt", "Arial", sans-serif;
+	font-size: 2rem;
+	text-align: center;
+}
+.header-title span,
+.main-title span {
+	font: inherit;
+}
+
+.menu-list-item {
+	color: blue;
+}
+.main-list li {
+	font-family: "Tektur", "Arial", sans-serif;
+}
+
+/*=================================================*/
+
+.additional-task-text {
+	font-family: "Poppins", "Arial", sans-serif;
+	line-height: 150%;
+	font-size: 18px;
+	color: #808080;
+}
+.paragraph-top {
+	font: inherit;
+	font-size: 20px;
+	font-weight: 500;
+	color: #1a1a1a;
+}
+.paragraph {
+	font: inherit;
+}
