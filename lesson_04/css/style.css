@@ -8,24 +8,24 @@ body {
 .header-title,
 .main-title {
 	font-family: "Rubik Dirt", sans-serif;
-	font-size: 2rem;
+	font-size: 32px;
 	text-align: center;
-	letter-spacing: 0.1em;
+	letter-spacing: 2px;
 	white-space: nowrap;
-	word-spacing: 0.7rem;
+	word-spacing: 11px;
 }
 .header-title span {
 	text-shadow: 3px 3px 8px #000;
 }
 .menu-list-item a {
 	color: blue;
-	line-height: 1.3rem;
+	line-height: 21px;
 	text-decoration: underline 2px;
 	text-underline-offset: 3px;
 }
 .main-list li {
 	font-family: "Tektur", sans-serif;
-	line-height: 1.3rem;
+	line-height: 21px;
 }
 .game-name {
 	text-transform: uppercase;
