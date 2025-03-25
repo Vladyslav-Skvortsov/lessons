@@ -6,6 +6,7 @@ body {
 }
 .header {
 	max-width: 150px;
+	/*тільки для тесту*/
 	margin: 0 auto -30px;
 	text-align: center;
 }
@@ -78,7 +79,7 @@ body {
 }
 .card-description {
 	margin-top: 20px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 20px;
 	color: #737373;
 }
@@ -134,4 +135,10 @@ body {
 	margin: 50px 250px;
 	max-width: 500px;
 	max-height: 50px;
+}
+.blok-6 {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 15px 20px;
+	background-color: #e74040;
 }
