@@ -114,13 +114,13 @@ body {
 .main-block {
 	margin-bottom: 50px;
 }
-.blok-1 {
+.block-1 {
 	margin: 10px 0px;
 }
 .span-1 {
 	margin-right: 20px;
 }
-.blok-2 {
+.block-2 {
 	max-width: 500px;
 	margin: 0 auto;
 }
@@ -132,28 +132,28 @@ body {
 .span-5 {
 	vertical-align: bottom;
 }
-.blok-4 {
+.block-4 {
 	overflow: hidden;
 	margin: 50px 250px;
 	max-width: 500px;
 	max-height: 25px;
 }
-.blok-5 {
+.block-5 {
 	overflow: auto;
 	margin: 50px 250px;
 	max-width: 500px;
 	max-height: 50px;
 }
-.blok-6,
-.blok-7 {
+.block-6,
+.block-7 {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 15px 20px;
 }
-.blok-6 {
+.block-6 {
 	background-color: #e74040;
 }
-.blok-7 {
+.block-7 {
 	vertical-align: -25px;
 	background-color: cadetblue;
 }
