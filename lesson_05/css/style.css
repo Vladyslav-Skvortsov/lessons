@@ -2,7 +2,7 @@
 @import url("fonts.css");
 
 body {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Arial" sans-serif;
 }
 .header {
 	max-width: 150px;
