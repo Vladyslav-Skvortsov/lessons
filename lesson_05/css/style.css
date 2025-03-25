@@ -144,16 +144,22 @@ body {
 	max-width: 500px;
 	max-height: 50px;
 }
-.block-6,
-.block-7 {
+.block-6 {
+	min-height: 200px;
+	min-width: 100px;
+	text-align: center;
+}
+
+.block-7,
+.block-8 {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 15px 20px;
 }
-.block-6 {
+.block-7 {
 	background-color: #e74040;
 }
-.block-7 {
+.block-8 {
 	vertical-align: -25px;
 	background-color: cadetblue;
 }
