@@ -1,0 +1,136 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+.header {
+	max-width: 150px;
+	margin: 0 auto -30px;
+	text-align: center;
+}
+.header h1 {
+	font-weight: 700;
+	font-size: 30px;
+	color: #fff;
+}
+
+#dop-dz {
+	background-color: #231f8b;
+}
+.wrapper {
+	max-width: 1082px;
+	margin: 0 auto;
+	padding: 112px 0px;
+	letter-spacing: 0.2px;
+}
+.title-main,
+.title-bottom,
+.card-title {
+	font-family: "Circular Std", sans-serif;
+	font-weight: 700;
+}
+.title {
+	font-size: 14px;
+	color: #fff;
+}
+.title-top {
+	margin-bottom: 10px;
+	line-height: 24px;
+	color: #5a54f2;
+}
+.title-main {
+	font-size: 36px;
+	line-height: 1.2;
+	letter-spacing: normal;
+}
+.title-bottom {
+	margin-top: 10px;
+	max-width: 765px;
+	font-weight: 450;
+	line-height: 20px;
+}
+
+.card-list {
+	margin-top: 70px;
+	font-size: 0;
+}
+.card-item {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 42px;
+	width: 230px;
+	padding: 35px 40px;
+	background-color: #fff;
+	font-size: 14px;
+}
+.card-img {
+	width: 72px;
+	height: 72px;
+}
+.card-title {
+	margin: 20px 0;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.1px;
+	color: #252b42;
+}
+.card-description {
+	margin-top: 20px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #737373;
+}
+.card-custom-block {
+	width: 50px;
+	height: 2px;
+	background-color: #e74040;
+}
+.different-card {
+	background-color: #5a54f2;
+}
+.different-card * {
+	color: #fff;
+}
+.card-top-indent {
+	margin-top: 48px;
+}
+.zero-right-indent {
+	margin-right: 0;
+}
+
+/*===========================*/
+
+.main-block {
+	margin-bottom: 50px;
+}
+.blok-1 {
+	margin: 10px 0px;
+}
+.span-1 {
+	margin-right: 20px;
+}
+.blok-2 {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.span-4 {
+	display: inline-block;
+	min-width: 300px;
+	margin: 50px;
+}
+.span-5 {
+	vertical-align: bottom;
+}
+.blok-4 {
+	overflow: hidden;
+	margin: 50px 250px;
+	max-width: 500px;
+	max-height: 25px;
+}
+.blok-5 {
+	overflow: auto;
+	margin: 50px 250px;
+	max-width: 500px;
+	max-height: 50px;
+}
