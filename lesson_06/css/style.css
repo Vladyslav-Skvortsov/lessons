@@ -98,7 +98,7 @@ footer {
 .about-container {
 	background-image: url("../img/vector_01.svg"), url("../img/vector_02.svg");
 	background-repeat: no-repeat, no-repeat;
-	background-position: center 57%, center 0%;
+	background-position: center 63%, center 0%;
 }
 .about-image {
 	display: inline-block;
@@ -143,6 +143,7 @@ footer {
 p.about-text {
 	margin-bottom: 28px;
 	font-size: 16px;
+	font-weight: 400;
 	line-height: 1.5;
 }
 .about-button {
