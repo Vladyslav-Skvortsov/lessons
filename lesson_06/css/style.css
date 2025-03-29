@@ -5,8 +5,8 @@ body {
 	font-family: "Montserrat", "Arial", sans-serif;
 }
 .header {
-	text-align: center;
 	padding: 20px 0;
+	text-align: center;
 	font-size: 20px;
 	font-weight: 700;
 	background: linear-gradient(
@@ -31,7 +31,8 @@ footer {
 /*=========================*/
 
 [class*="-container"] {
-	padding: 0 15px;
+	padding: 0 15px 100px;
+	background-color: #302c42;
 }
 [class*="-content"] {
 	margin: 0 auto;
@@ -39,15 +40,9 @@ footer {
 	width: 100%;
 	font-size: 0;
 }
-.links {
+.links-container {
 	padding-top: 100px;
 }
-.links,
-.about {
-	padding-bottom: 100px;
-	background-color: #302c42;
-}
-
 .links-content {
 	padding: 32px 60px;
 	box-shadow: 0px 4px 4px 0px rgba(5, 5, 6, 0.01);
@@ -103,7 +98,7 @@ footer {
 .about-container {
 	background-image: url("../img/vector_01.svg"), url("../img/vector_02.svg");
 	background-repeat: no-repeat, no-repeat;
-	background-position: center 73%, center -5%;
+	background-position: center 57%, center 0%;
 }
 .about-image {
 	display: inline-block;
@@ -162,8 +157,8 @@ p.about-text {
 }
 
 /*========================*/
-.descriptions {
-	margin-bottom: 100px;
+.descriptions-container {
+	background-color: #fff;
 }
 .descriptions-text {
 	margin: 0 auto;
@@ -195,6 +190,7 @@ p.about-text {
 /*==========TEST===========*/
 
 .test {
+	background-color: #fff;
 	font-size: 0;
 }
 .pacman-test {
