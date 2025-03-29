@@ -1,0 +1,235 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+body {
+	font-family: "Montserrat", "Arial", sans-serif;
+}
+.header {
+	text-align: center;
+	padding: 20px 0;
+	font-size: 20px;
+	font-weight: 700;
+	background: linear-gradient(
+		90deg,
+		rgba(37, 27, 218, 1) 0%,
+		rgba(107, 85, 173, 1) 24%,
+		rgba(116, 9, 83, 1) 51%,
+		rgba(214, 209, 32, 1) 70%,
+		rgba(0, 212, 255, 1) 100%
+	);
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+footer {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+/*=========================*/
+
+[class*="-container"] {
+	padding: 0 15px;
+}
+[class*="-content"] {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1272px;
+	font-size: 0;
+}
+.links {
+	padding-top: 100px;
+}
+.links,
+.about {
+	padding-bottom: 100px;
+	background-color: #302c42;
+}
+
+.links-content {
+	padding: 32px 60px;
+	box-shadow: 0px 4px 4px 0px rgba(5, 5, 6, 0.01);
+	border-radius: 90px;
+	background: radial-gradient(circle, rgba(58, 52, 86, 1) 0%, rgba(33, 30, 46, 1) 95%);
+	color: white;
+}
+.link-item {
+	display: inline-block;
+	padding: 28px 0;
+}
+.link-item p {
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: 700;
+}
+.link-item a {
+	font-size: 14px;
+}
+.location-item,
+.phone-item,
+.mail-item {
+	padding-left: 85px;
+	border-right: 1px solid rgba(192, 183, 232, 0.33);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+}
+.location-item {
+	margin-right: 40px;
+	padding-right: 40px;
+	background-image: url("../img/location-icon.svg");
+}
+.phone-item {
+	margin-right: 50px;
+	padding-right: 66px;
+	background-image: url("../img/phone-call-icon.svg");
+}
+.mail-item {
+	border-right: none;
+	background-image: url("../img/mail-icon.svg");
+}
+
+/*=======================*/
+
+.about-container {
+	background-image: url("../img/vector_01.svg"), url("../img/vector_02.svg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: center 80%, center top;
+}
+.about-image {
+	display: inline-block;
+	overflow: clip;
+	margin-right: 110px;
+	max-width: 524px;
+	max-height: 557px;
+	border-radius: 45.8% 19.1% 45.8% 19.1% / 43.1% 17.9% 43.1% 17.9%;
+}
+/*
+	240px / 524px * 100% = 45.8%
+	100px / 524px * 100% = 19.1%
+	240px / 557px * 100% = 43.1%
+	100px / 557px * 100% = 17.9%
+*/
+
+.about-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.about-description {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 630px;
+	width: 100%;
+	padding-top: 47px;
+	color: white;
+}
+.about-title {
+	margin-bottom: 5px;
+	font-size: 36px;
+	font-weight: 700;
+}
+.about-label {
+	margin-bottom: 42px;
+	font-size: 36px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.95);
+}
+.about-text {
+	margin-bottom: 28px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.about-button {
+	border-radius: 40px;
+	width: 214px;
+	height: 48px;
+	padding: 17px 42px;
+	background: linear-gradient(90deg, rgba(129, 118, 175, 1) 0%, rgba(192, 183, 232, 1) 100%);
+	font-size: 12px;
+	font-weight: 700;
+	color: #343045;
+}
+
+/*========================*/
+.descriptions {
+	margin-bottom: 100px;
+}
+.descriptions-text {
+	margin: 0 auto;
+	max-width: 648px;
+	width: 100%;
+	padding-top: 50px;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #808080;
+}
+.descriptions-paragraph {
+	margin-bottom: 20px;
+}
+.descriptions-list {
+	margin-bottom: 20px;
+}
+.descriptions-item {
+	margin-bottom: 14px;
+	padding-left: 28px;
+	line-height: 1.4;
+	background: url("../img/check-icon.svg") 0 0 / 20px no-repeat;
+}
+.remove-margin {
+	margin: 0;
+}
+
+/*==========TEST===========*/
+
+.test {
+	font-size: 0;
+}
+.pacman-test {
+	height: 100%;
+	padding: 10px 30px;
+	border-radius: 50px;
+	margin-bottom: 100px;
+	background: linear-gradient(90deg, rgba(175, 118, 118, 1) 0%, rgba(183, 204, 232, 1) 100%);
+}
+.pacman {
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px;
+	border-radius: 50%;
+	border-color: yellow transparent yellow yellow;
+}
+.red-ball {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+	width: 25px;
+	height: 25px;
+	background-color: red;
+	border-radius: 50%;
+}
+.ufo {
+	width: 100%;
+	margin-bottom: 100px;
+}
+.ufo-top {
+	margin: 0 50px -220px 470px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 80px;
+	border-radius: 50%;
+	border-color: rgba(149, 221, 255, 1) transparent transparent rgba(149, 221, 255, 1);
+}
+.ufo-bottom {
+	margin: 0 auto;
+	height: 400px;
+	width: 400px;
+	border-radius: 94% 6% 95% 5% / 95% 5% 95% 5%;
+	background: linear-gradient(90deg, rgba(191, 191, 191, 1) 37%, rgba(151, 255, 254, 1) 100%);
+}
