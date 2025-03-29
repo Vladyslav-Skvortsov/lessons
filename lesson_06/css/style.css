@@ -103,7 +103,7 @@ footer {
 .about-container {
 	background-image: url("../img/vector_01.svg"), url("../img/vector_02.svg");
 	background-repeat: no-repeat, no-repeat;
-	background-position: center 80%, center top;
+	background-position: center 73%, center -5%;
 }
 .about-image {
 	display: inline-block;
