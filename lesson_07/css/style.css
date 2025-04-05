@@ -25,13 +25,15 @@ a:hover {
 	text-decoration: underline;
 }
 
-/*=========================*/
+/*============Professional Faculty=============*/
 
+[class*="-container"] {
+	padding: 0 15px;
+}
 [class*="-content"] {
 	margin: 0 auto;
-	max-width: 1233px;
+	max-width: 1202px;
 	width: 100%;
-	padding: 0 15px;
 }
 .cards-container {
 	padding-top: 60px;
@@ -48,40 +50,43 @@ a:hover {
 	line-height: 1.5;
 }
 .cards-list {
-	max-width: 1202px;
 	width: 100%;
 	font-size: 0;
 }
 .card-item {
 	display: inline-block;
 	vertical-align: top;
+	margin-bottom: 20px;
 	min-height: 476px;
 	max-width: 387px;
 	width: 100%;
-	margin-bottom: 20px;
 	padding: 20px;
 	background-color: #fff;
-	box-shadow: 0 62px 62px rgba(0, 0, 0, 0.09), 0 15px 34px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 15px 34px rgba(0, 0, 0, 0.1), 0 62px 62px rgba(0, 0, 0, 0.09);
 }
+/* якщо три картки в ряд
+	при цій ширині cards-list 1202px*/
 .card-item:not(:nth-child(3n)) {
 	margin-right: 20px;
 }
 .card-item:hover {
 	background-color: #ffbe48;
 }
+.card-img,
+.card-item h3,
+.card-description {
+	margin-bottom: 16px;
+}
 .card-img {
 	width: 347px;
 	height: 266px;
-	margin-bottom: 16px;
 }
 .card-item h3 {
 	font-size: 22px;
 	font-weight: 600;
-	margin-bottom: 16px;
 }
 .card-description {
 	min-height: 76px;
-	margin-bottom: 16px;
 }
 .card-about-link a {
 	padding-right: 10px;
@@ -97,11 +102,12 @@ a:hover {
 	line-height: 1.187;
 }
 
+/* ========Faculty California======= */
+
 .faculty-california-container {
 	padding-top: 153px;
 	padding-bottom: 137px;
 }
-
 .faculty-california-list {
 	display: inline-block;
 	max-width: 518px;
@@ -143,34 +149,41 @@ a:hover {
 	margin-right: 15px;
 }
 
-/*========================*/
-.game-container {
+/*==============Game==============*/
+
+.game-container h2 {
 	text-align: center;
+	font-weight: 700;
 }
 .block-list {
-	min-height: 600px;
+	margin: 0 auto;
+	min-height: 550px;
+	max-width: 1152px;
 	width: 100%;
 	border: 1px solid #000;
+	font-size: 0;
 }
 .block {
-	/*display: inline-block;*/
-	width: 100%;
-	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	visibility: hidden;
 	height: 100px;
 	width: 100px;
 	background-color: steelblue;
-	visibility: hidden;
-	/*overflow: hidden;*/
 }
-/*
-.block-1 {
-	visibility: visible;
-}*/
+.block:nth-child(even):not(:first-child):not(:last-child) {
+	height: 50px;
+	width: 200px;
+	background-color: brown;
+}
+.block:nth-child(odd):not(:first-child):not(:last-child) {
+	height: 200px;
+	width: 50px;
+	background-color: lightgreen;
+}
 .block:hover,
 .block:nth-child(1),
-.block:nth-child(1):hover + .block,
-.block:nth-child(2):hover + .block,
-.block:nth-child(3):hover + .block {
+.block:hover + .block {
 	visibility: visible;
 }
 .block:last-child {
@@ -180,4 +193,56 @@ a:hover {
 	visibility: visible;
 }
 
+.block:nth-child(2),
+.block:nth-child(3) {
+	margin-top: 50px;
+}
+.block:nth-child(4),
+.block:nth-child(5) {
+	margin-top: 200px;
+}
+.block:nth-child(6),
+.block:nth-child(7) {
+	margin-top: 350px;
+}
+.block:nth-child(8),
+.block:nth-child(9) {
+	margin-top: 500px;
+}
+
 /*==========TEST===========*/
+
+.test-container h2 {
+	text-align: center;
+	font-weight: 700;
+}
+.test-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.test-block div {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	height: 50px;
+	padding: 10px 0;
+	background-color: #fe3f3f;
+	text-align: center;
+}
+.test-block div:nth-child(1) a:focus {
+	background-color: green;
+}
+.test-block a:visited {
+	color: aqua;
+}
+.test-block div:nth-child(3):active {
+	border-radius: 15px;
+	background-color: antiquewhite;
+}
+.test-block div:nth-child(4):hover {
+	border-radius: 15px;
+	background-color: green;
+}
+.test-container h2:target {
+	color: #00b00f;
+}
