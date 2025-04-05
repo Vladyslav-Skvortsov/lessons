@@ -1,0 +1,183 @@
+@import url("normalize.css");
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
+
+body {
+	font-family: "Inter", "Arial", sans-serif;
+}
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+.header {
+	padding: 20px 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
+	background: linear-gradient(90deg, rgba(107, 85, 173, 1) 50%, rgba(0, 212, 255, 1) 100%);
+}
+footer {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/*=========================*/
+
+[class*="-content"] {
+	margin: 0 auto;
+	max-width: 1233px;
+	width: 100%;
+	padding: 0 15px;
+}
+.cards-container {
+	padding-top: 60px;
+	padding-bottom: 82px;
+	background-color: #412672;
+}
+.cards-title {
+	font-size: 38px;
+	color: #fff;
+	margin-bottom: 31px;
+}
+.cards-title h2 strong {
+	font-weight: 700;
+	line-height: 1.5;
+}
+.cards-list {
+	max-width: 1202px;
+	width: 100%;
+	font-size: 0;
+}
+.card-item {
+	display: inline-block;
+	vertical-align: top;
+	min-height: 476px;
+	max-width: 387px;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 62px 62px rgba(0, 0, 0, 0.09), 0 15px 34px rgba(0, 0, 0, 0.1);
+}
+.card-item:not(:nth-child(3n)) {
+	margin-right: 20px;
+}
+.card-item:hover {
+	background-color: #ffbe48;
+}
+.card-img {
+	width: 347px;
+	height: 266px;
+	margin-bottom: 16px;
+}
+.card-item h3 {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 16px;
+}
+.card-description {
+	min-height: 76px;
+	margin-bottom: 16px;
+}
+.card-about-link a {
+	padding-right: 10px;
+	font-weight: 400;
+	color: #fe3f3f;
+}
+.card-about-link a:hover {
+	color: #fe0000;
+}
+.card-description,
+.card-about-link {
+	font-size: 15px;
+	line-height: 1.187;
+}
+
+.faculty-california-container {
+	padding-top: 153px;
+	padding-bottom: 137px;
+}
+
+.faculty-california-list {
+	display: inline-block;
+	max-width: 518px;
+}
+.faculty-california-list h2 {
+	margin-bottom: 20px;
+	font-size: 34px;
+	color: #412672;
+}
+.faculty-california-list h2 strong {
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.faculty-california-description p {
+	margin-bottom: 33px;
+	font-size: 22px;
+	line-height: 1.3;
+	color: #412672;
+}
+.faculty-california-description ul {
+	padding-left: 44px; /* 29 before img width + 15 margin */
+}
+.faculty-california-description li {
+	font-size: 20px;
+	line-height: 1.81; /* before img height 29 / 16 */
+	color: #4f4f4f;
+}
+.faculty-california-description li:not(:last-child) {
+	margin-bottom: 21px;
+}
+.faculty-california-description li::before {
+	content: url(../img/frame.svg);
+	display: inline-block;
+	vertical-align: middle;
+	width: 29px;
+	height: 29px;
+	margin-left: -44px;
+	margin-right: 15px;
+}
+
+/*========================*/
+.game-container {
+	text-align: center;
+}
+.block-list {
+	min-height: 600px;
+	width: 100%;
+	border: 1px solid #000;
+}
+.block {
+	/*display: inline-block;*/
+	width: 100%;
+	height: 100%;
+	height: 100px;
+	width: 100px;
+	background-color: steelblue;
+	visibility: hidden;
+	/*overflow: hidden;*/
+}
+/*
+.block-1 {
+	visibility: visible;
+}*/
+.block:hover,
+.block:nth-child(1),
+.block:nth-child(1):hover + .block,
+.block:nth-child(2):hover + .block,
+.block:nth-child(3):hover + .block {
+	visibility: visible;
+}
+.block:last-child {
+	background-color: red;
+}
+.block-list:has(.block:last-child:active) .block {
+	visibility: visible;
+}
+
+/*==========TEST===========*/
