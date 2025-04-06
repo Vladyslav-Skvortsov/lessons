@@ -72,9 +72,7 @@ a:hover {
 .card-item:hover {
 	background-color: #ffbe48;
 }
-.card-img,
-.card-item h3,
-.card-description {
+.card-item > *:not(:last-child) {
 	margin-bottom: 16px;
 }
 .card-img {
