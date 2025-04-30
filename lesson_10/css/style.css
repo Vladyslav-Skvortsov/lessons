@@ -245,8 +245,8 @@ absolute, щоб вони не займали місце в блоці, але �
 	position: absolute;
 }
 .management-info__img-container::before {
-	top: 127px;
-	left: -130px;
+	top: 25%;
+	left: -28%;
 	z-index: 1;
 	width: 422px;
 	height: 450px;
@@ -255,8 +255,8 @@ absolute, щоб вони не займали місце в блоці, але �
 	background-size: auto, auto;
 }
 .risk-info__img-container::before {
-	top: -46px;
-	left: 90px;
+	top: -8%;
+	left: 20%;
 	z-index: 3;
 	width: 65px;
 	height: 65px;
@@ -264,8 +264,8 @@ absolute, щоб вони не займали місце в блоці, але �
 	background-size: auto;
 }
 .risk-info__img-container::after {
-	top: -26px;
-	right: -129px;
+	top: -7%;
+	right: -30%;
 	z-index: 1;
 	width: 262px;
 	height: 262px;
@@ -301,7 +301,7 @@ absolute, щоб вони не займали місце в блоці, але �
 	z-index: 1;
 }
 .management-info::before {
-	top: 75%;
+	top: 69%;
 	left: 13%;
 	width: 214px;
 	height: 473px;
