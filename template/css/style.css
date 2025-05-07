@@ -34,9 +34,3 @@ footer {
 	max-width: 1229px;
 	width: 100%;
 }
-[class*="__img-container"] {
-	display: inline-block;
-	position: relative;
-	vertical-align: top;
-	min-width: 430px;
-}
