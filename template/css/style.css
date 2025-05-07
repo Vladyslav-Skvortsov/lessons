@@ -1,0 +1,42 @@
+@import url("normalize.css");
+@import url("fonts.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+.header {
+	margin-bottom: 20px;
+	padding: 30px 0;
+}
+.header__title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+footer {
+	padding: 20px 0;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	/*background-color: #231f8b;
+	color: #fff;*/
+}
+
+/*==============================*/
+
+[class*="__container"] {
+	padding: 0 15px;
+}
+[class*="__content"] {
+	margin: 0 auto;
+	max-width: 1229px;
+	width: 100%;
+}
+[class*="__img-container"] {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	min-width: 430px;
+}
