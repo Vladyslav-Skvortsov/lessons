@@ -31,7 +31,7 @@ footer {
 	margin: 0 auto;
 	max-width: 1200px;
 	width: 100%;
-	padding: 50px 0;
+	padding: 80px 0;
 }
 .car__content {
 	max-width: 750px;
@@ -285,25 +285,24 @@ footer {
 	border-radius: 50% 50% 50% 50% / 8% 8% 8% 8%;
 	background-color: #3c3c3c;
 }
-.ufo__wheel::before {
+.ufo__wheel::before,
+.ufo__wheel::after {
 	content: "";
 	position: relative;
+	border-radius: 50px;
+	background-color: #c1c1c1;
+}
+.ufo__wheel::before {
 	top: 12px;
 	left: 14px;
 	width: 5px;
 	height: 80px;
-	border-radius: 50px;
-	background-color: #c1c1c1;
 }
 .ufo__wheel::after {
-	content: "";
-	position: relative;
 	top: 30px;
 	left: 25px;
 	width: 5px;
 	height: 50px;
-	border-radius: 50px;
-	background-color: #c1c1c1;
 }
 
 .ufo__wheel--left {
@@ -325,4 +324,118 @@ footer {
 	background-color: rgb(74, 74, 74);
 }
 
-/*============TEST=============*/
+/*============transform=============*/
+
+.transform {
+}
+.transform__container {
+}
+.transform__content {
+	padding: 20px;
+	border: 1px solid #737373;
+	max-width: 712px;
+	font-size: 0;
+}
+.transform__block-wrapper,
+.transform__properties {
+	display: inline-block;
+}
+.transform__block-wrapper {
+	padding: 20px;
+}
+.transform__block {
+	height: 200px;
+	width: 200px;
+	border: 2px solid #737373;
+	border-radius: 20px;
+	box-shadow: 0 0 20px #737373;
+	background-color: aquamarine;
+	/*==============*/
+	transition: all 0.3s ease 0s;
+}
+.transform__properties {
+	vertical-align: top;
+	margin-left: 50px;
+	max-width: 380px;
+}
+.transform__properties > *:not(:last-child) {
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+.transform__properties > *:nth-child(3n) {
+	margin-right: 0px;
+}
+.transform__translate,
+.transform__scale,
+.transform__scale-x,
+.transform__scale-y,
+.transform__rotate,
+.transform__rotate-x,
+.transform__rotate-y,
+.transform__skew,
+.transform__skew-x,
+.transform__skew-y {
+	display: inline-block;
+	width: 120px;
+	padding: 10px;
+	border: 1px solid #737373;
+	border-radius: 8px;
+	background-color: #ffc1c1;
+	text-align: center;
+	font-size: 20px;
+	/*==============*/
+	transition: all 0.3s ease 0s;
+}
+.transform__translate:hover,
+.transform__scale:hover,
+.transform__scale-x:hover,
+.transform__scale-y:hover,
+.transform__rotate:hover,
+.transform__rotate-x:hover,
+.transform__rotate-y:hover,
+.transform__skew:hover,
+.transform__skew-x:hover,
+.transform__skew-y:hover {
+	background-color: #ff9e9e;
+	box-shadow: 0 0 20px #737373;
+	cursor: pointer;
+}
+.transform__translate {
+}
+.transform__scale {
+}
+.transform__rotate {
+}
+.transform__skew {
+}
+
+.transform__content:has(.transform__translate:hover) .transform__block {
+	transform: translate(50px, 50px);
+}
+.transform__content:has(.transform__scale:hover) .transform__block {
+	transform: scale(1.3);
+}
+.transform__content:has(.transform__scale-x:hover) .transform__block {
+	transform: scaleX(1.3);
+}
+.transform__content:has(.transform__scale-y:hover) .transform__block {
+	transform: scaleY(1.3);
+}
+.transform__content:has(.transform__rotate:hover) .transform__block {
+	transform: rotate(45deg);
+}
+.transform__content:has(.transform__rotate-x:hover) .transform__block {
+	transform: rotateX(90deg);
+}
+.transform__content:has(.transform__rotate-y:hover) .transform__block {
+	transform: rotateY(90deg);
+}
+.transform__content:has(.transform__skew:hover) .transform__block {
+	transform: skew(40deg, 40deg);
+}
+.transform__content:has(.transform__skew-x:hover) .transform__block {
+	transform: skewX(40deg);
+}
+.transform__content:has(.transform__skew-y:hover) .transform__block {
+	transform: skewY(40deg);
+}
