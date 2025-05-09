@@ -325,19 +325,20 @@ footer {
 }
 
 /*============transform=============*/
-
-.transform {
+.transform__container--margin,
+.transform-3d__container--margin {
+	margin-bottom: 50px;
 }
-.transform__container {
-}
-.transform__content {
-	padding: 20px;
+.transform__content,
+.transform-3d__content {
+	padding: 50px 20px;
 	border: 1px solid #737373;
 	max-width: 712px;
 	font-size: 0;
 }
 .transform__block-wrapper,
-.transform__properties {
+.transform__properties,
+.transform-3d__properties {
 	display: inline-block;
 }
 .transform__block-wrapper {
@@ -353,16 +354,19 @@ footer {
 	/*==============*/
 	transition: all 0.3s ease 0s;
 }
-.transform__properties {
+.transform__properties,
+.transform-3d__properties {
 	vertical-align: top;
 	margin-left: 50px;
 	max-width: 380px;
 }
-.transform__properties > *:not(:last-child) {
+.transform__properties > *:not(:last-child),
+.transform-3d__properties > *:not(:last-child) {
 	margin-bottom: 20px;
 	margin-right: 10px;
 }
-.transform__properties > *:nth-child(3n) {
+.transform__properties > *:nth-child(3n),
+.transform-3d__properties > *:nth-child(3n) {
 	margin-right: 0px;
 }
 .transform__translate,
@@ -374,7 +378,13 @@ footer {
 .transform__rotate-y,
 .transform__skew,
 .transform__skew-x,
-.transform__skew-y {
+.transform__skew-y,
+.transform-3d__translate,
+.transform-3d__scale,
+.transform-3d__rotate,
+.transform-3d__rotate-x,
+.transform-3d__rotate-y,
+.transform-3d__skew {
 	display: inline-block;
 	width: 120px;
 	padding: 10px;
@@ -395,18 +405,16 @@ footer {
 .transform__rotate-y:hover,
 .transform__skew:hover,
 .transform__skew-x:hover,
-.transform__skew-y:hover {
+.transform__skew-y:hover,
+.transform-3d__translate:hover,
+.transform-3d__scale:hover,
+.transform-3d__rotate:hover,
+.transform-3d__rotate-x:hover,
+.transform-3d__rotate-y:hover,
+.transform-3d__skew:hover {
 	background-color: #ff9e9e;
 	box-shadow: 0 0 20px #737373;
 	cursor: pointer;
-}
-.transform__translate {
-}
-.transform__scale {
-}
-.transform__rotate {
-}
-.transform__skew {
 }
 
 .transform__content:has(.transform__translate:hover) .transform__block {
@@ -438,4 +446,67 @@ footer {
 }
 .transform__content:has(.transform__skew-y:hover) .transform__block {
 	transform: skewY(40deg);
+}
+
+/*===========cube============*/
+
+.transform-3d__figure-wrapper {
+	display: inline-block;
+	perspective: 800px;
+	padding-left: 25px;
+}
+.cube {
+	position: relative;
+	transform-style: preserve-3d;
+	height: 200px;
+	width: 200px;
+	/*==============*/
+	transition: all 0.8s ease 0s;
+}
+.cube__top,
+.cube__bottom,
+.cube__front,
+.cube__back,
+.cube__left,
+.cube__right {
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	border: 1px solid #737373;
+	box-shadow: inset 0 0 30px rgba(92, 136, 254, 1);
+	background-color: rgba(92, 136, 254, 0.404);
+}
+.cube__top {
+	transform: rotateX(90deg) translateZ(100px);
+}
+.cube__bottom {
+	transform: rotateX(-90deg) translateZ(100px);
+}
+.cube__front {
+	transform: translateZ(100px);
+}
+.cube__back {
+	transform: translateZ(-100px);
+}
+.cube__left {
+	transform: rotateY(-90deg) translateZ(100px);
+}
+.cube__right {
+	transform: rotateY(90deg) translateZ(100px);
+}
+
+.transform-3d__content:has(.transform-3d__translate:hover) .cube {
+	transform: translate3d(-100px, -50px, 200px);
+}
+.transform-3d__content:has(.transform-3d__scale:hover) .cube {
+	transform: scale3d(1.5, 1.5, 1.5);
+}
+.transform-3d__content:has(.transform-3d__rotate:hover) .cube {
+	transform: rotate3d(5, 5, 5, 160deg);
+}
+.transform-3d__content:has(.transform-3d__rotate-x:hover) .cube {
+	transform: rotateX(90deg);
+}
+.transform-3d__content:has(.transform-3d__rotate-y:hover) .cube {
+	transform: rotateY(90deg);
 }
