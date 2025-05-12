@@ -33,12 +33,51 @@ footer {
 	width: 100%;
 	padding: 80px 0;
 }
+
+/*========================*/
+.btn__content {
+	max-width: 300px;
+}
+.btn__swipe-btn {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	width: 300px;
+	height: 100px;
+	border: 1px solid #000;
+	padding: 32px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	transition: color 0.5s ease;
+}
+.btn__swipe-btn:hover {
+	color: #fff;
+}
+.btn__swipe-btn::before {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: -101%;
+	width: 300px;
+	height: 100px;
+	background-color: rgb(92, 0, 0);
+	transition: left 0.5s ease;
+}
+.btn__swipe-btn:hover::before {
+	left: 0%;
+}
+
+/*======================*/
 .car__content {
 	max-width: 750px;
 }
 .ufo {
 	position: relative;
-	/*transition: 10s ease 0s;*/
+	will-change: transform;
+	animation: ufo-flight 20s cubic-bezier(0.41, 0.26, 0.71, 0.53) 0s infinite;
 }
 .ufo__top,
 .ufo__middle,
@@ -100,6 +139,8 @@ footer {
 	height: 30px;
 	border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
 	background-color: #fff;
+	will-change: transform;
+	animation: glare-move 2.5s linear 0s infinite alternate;
 }
 .ufo__characters {
 	z-index: 1;
@@ -190,6 +231,8 @@ footer {
 	border: 2px solid #000;
 	border-radius: 50%;
 	background-color: rgb(135, 127, 112);
+	will-change: transform;
+	animation: engine-work 1s linear 0s infinite alternate;
 }
 .ufo__engine-block-01::before {
 	content: "";
@@ -202,6 +245,8 @@ footer {
 	border-left: none;
 	border-bottom: none;
 	border-radius: 50%;
+	will-change: transform;
+	animation: rotate 10s linear 0s infinite;
 }
 .ufo__engine-block-02-left,
 .ufo__engine-block-02-right {
@@ -228,24 +273,31 @@ footer {
 .ufo__engine-block-02-left > .ufo__engine-element {
 	transform-origin: bottom right;
 	right: 0;
+	will-change: transform;
+	animation: 1s linear infinite alternate;
 }
 .ufo__engine-block-02-left > .ufo__engine-element:nth-child(2) {
+	animation-name: engine-element-work-2-left;
 	transform: rotate(15deg);
 	top: 4px;
 }
 .ufo__engine-block-02-left > .ufo__engine-element:nth-child(3) {
+	animation-name: engine-element-work-3-left;
 	transform: rotate(30deg);
 	top: 8px;
 }
 .ufo__engine-block-02-left > .ufo__engine-element:nth-child(4) {
+	animation-name: engine-element-work-4-left;
 	transform: rotate(45deg);
 	top: 12px;
 }
 .ufo__engine-block-02-left > .ufo__engine-element:nth-child(5) {
+	animation-name: engine-element-work-5-left;
 	transform: rotate(60deg);
 	top: 16px;
 }
 .ufo__engine-block-02-left > .ufo__engine-element:nth-child(6) {
+	animation-name: engine-element-work-6-left;
 	transform: rotate(75deg);
 	top: 20px;
 }
@@ -253,24 +305,31 @@ footer {
 .ufo__engine-block-02-right > .ufo__engine-element {
 	transform-origin: bottom left;
 	left: 0;
+	will-change: transform;
+	animation: 1s linear infinite alternate;
 }
 .ufo__engine-block-02-right > .ufo__engine-element:nth-child(2) {
+	animation-name: engine-element-work-2-right;
 	transform: rotate(-15deg);
 	top: 4px;
 }
 .ufo__engine-block-02-right > .ufo__engine-element:nth-child(3) {
+	animation-name: engine-element-work-3-right;
 	transform: rotate(-30deg);
 	top: 8px;
 }
 .ufo__engine-block-02-right > .ufo__engine-element:nth-child(4) {
+	animation-name: engine-element-work-4-right;
 	transform: rotate(-45deg);
 	top: 12px;
 }
 .ufo__engine-block-02-right > .ufo__engine-element:nth-child(5) {
+	animation-name: engine-element-work-5-right;
 	transform: rotate(-60deg);
 	top: 16px;
 }
 .ufo__engine-block-02-right > .ufo__engine-element:nth-child(6) {
+	animation-name: engine-element-work-6-right;
 	transform: rotate(-75deg);
 	top: 20px;
 }
@@ -292,6 +351,8 @@ footer {
 	position: relative;
 	border-radius: 50px;
 	background-color: #c1c1c1;
+	will-change: transform;
+	animation: wheel-move 1s linear 0s infinite alternate;
 }
 .ufo__wheel::before {
 	top: 12px;
@@ -331,24 +392,22 @@ footer {
 	margin-bottom: 50px;
 }
 .transform-3d__content {
-	padding: 50px 20px;
+	padding: 40px 0;
 	border: 1px solid #737373;
 	max-width: 300px;
+	min-height: 600px;
 	font-size: 0;
+	perspective: 800px;
 }
 
-.transform-3d__figure-wrapper {
-	display: inline-block;
-	perspective: 800px;
-	padding-left: 25px;
-}
 .cube {
 	position: relative;
 	transform-style: preserve-3d;
 	height: 200px;
 	width: 200px;
-	/*==============*/
-	transition: all 0.8s ease 0s;
+	margin: 0 auto;
+	will-change: transform;
+	animation: cube-move 3s cubic-bezier(0.43, 1.48, 0.62, -0.5) 0s infinite alternate;
 }
 .cube__top,
 .cube__bottom,
@@ -362,6 +421,8 @@ footer {
 	border: 1px solid #737373;
 	box-shadow: inset 0 0 30px rgba(92, 136, 254, 1);
 	background-color: rgba(92, 136, 254, 0.404);
+	will-change: background-color, box-shadow;
+	animation: cube-color 3s linear 0s infinite alternate;
 }
 .cube__top {
 	transform: rotateX(90deg) translateZ(100px);
@@ -386,37 +447,175 @@ footer {
 
 @keyframes ufo-flight {
 	0% {
+		transform: translate(0px, 0px) scale(1);
+	}
+	12.5% {
+		transform: translate(-100px, -70px) rotate(20deg) scale(1.1);
+	}
+	25% {
+		transform: translate(0px, 0px) scale(1);
+	}
+	37.5% {
+		transform: translate(100px, -70px) rotate(-20deg) scale(1);
+	}
+	50% {
+		transform: translate(0px, 0px) scale(1);
+	}
+	62.5% {
+		transform: translate(-100px, -70px) rotate(20deg) scale(1);
+	}
+	75% {
+		transform: translate(0px, 0px) scale(1);
+	}
+	87.5% {
+		transform: translate(100px, -70px) rotate(-20deg) scale(1.1);
 	}
 	100% {
+		transform: translate(0px, 0px) scale(1);
 	}
 }
 @keyframes glare-move {
 	0% {
+		transform: translate(0px, 0px) rotate(11deg);
 	}
 	100% {
+		transform: translate(30px, 0px) rotate(21deg);
 	}
 }
 @keyframes engine-work {
 	0% {
+		transform: translate(3px, 0px);
+	}
+	25% {
+		transform: translate(-3px, 0px);
+	}
+	50% {
+		transform: translate(0px, 3px);
+	}
+	75% {
+		transform: translate(0px, -3px);
 	}
 	100% {
+		transform: translate(0px, 0px);
 	}
 }
 @keyframes rotate {
 	0% {
+		transform: rotate(0deg);
 	}
 	100% {
+		transform: rotate(360deg);
 	}
 }
-@keyframes engine-element-work {
+@keyframes engine-element-work-2-left {
 	0% {
+		transform: translate(1px, 4px) rotate(15deg);
 	}
 	100% {
+		transform: translate(-1px, -4px) rotate(15deg);
+	}
+}
+@keyframes engine-element-work-3-left {
+	0% {
+		transform: translate(2px, 3px) rotate(30deg);
+	}
+	100% {
+		transform: translate(-2px, -3px) rotate(30deg);
+	}
+}
+@keyframes engine-element-work-4-left {
+	0% {
+		transform: translate(3px, 2px) rotate(45deg);
+	}
+	100% {
+		transform: translate(-3px, -2px) rotate(45deg);
+	}
+}
+@keyframes engine-element-work-5-left {
+	0% {
+		transform: translate(2px, 2px) rotate(60deg);
+	}
+	100% {
+		transform: translate(-2px, -2px) rotate(60deg);
+	}
+}
+@keyframes engine-element-work-6-left {
+	0% {
+		transform: translate(4px, 0px) rotate(75deg);
+	}
+	100% {
+		transform: translate(-4px, 0px) rotate(75deg);
+	}
+}
+
+@keyframes engine-element-work-2-right {
+	0% {
+		transform: translate(1px, 4px) rotate(-15deg);
+	}
+	100% {
+		transform: translate(-1px, -4px) rotate(-15deg);
+	}
+}
+@keyframes engine-element-work-3-right {
+	0% {
+		transform: translate(2px, 3px) rotate(-30deg);
+	}
+	100% {
+		transform: translate(-2px, -3px) rotate(-30deg);
+	}
+}
+@keyframes engine-element-work-4-right {
+	0% {
+		transform: translate(3px, 2px) rotate(-45deg);
+	}
+	100% {
+		transform: translate(-3px, -2px) rotate(-45deg);
+	}
+}
+@keyframes engine-element-work-5-right {
+	0% {
+		transform: translate(2px, 2px) rotate(-60deg);
+	}
+	100% {
+		transform: translate(-2px, -2px) rotate(-60deg);
+	}
+}
+@keyframes engine-element-work-6-right {
+	0% {
+		transform: translate(3px, 0px) rotate(-75deg);
+	}
+	100% {
+		transform: translate(-3px, 0px) rotate(-73deg);
 	}
 }
 @keyframes wheel-move {
 	0% {
+		transform: translate(0px, 5px);
 	}
 	100% {
+		transform: translate(0px, -5px);
+	}
+}
+
+@keyframes cube-move {
+	0% {
+		transform: translate(0px, 0px) rotate3d(0, 0, 0, 0deg);
+	}
+	100% {
+		transform: translate(0px, 320px) rotate3d(50, 30, 20, 360deg);
+	}
+}
+@keyframes cube-color {
+	0% {
+		box-shadow: inset 0 0 30px rgb(119, 254, 92);
+		background-color: rgba(119, 254, 92, 0.404);
+	}
+	50% {
+		box-shadow: inset 0 0 30px rgb(230, 42, 251);
+		background-color: rgba(230, 42, 251, 0.404);
+	}
+	100% {
+		box-shadow: inset 0 0 30px rgb(255, 72, 72);
+		background-color: rgba(255, 72, 72, 0.404);
 	}
 }
