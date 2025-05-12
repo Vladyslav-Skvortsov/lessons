@@ -1,0 +1,422 @@
+@import url("normalize.css");
+@import url("fonts.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+.header {
+	margin-bottom: 20px;
+	padding: 30px 0;
+}
+.header__title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+footer {
+	padding: 20px 0;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+/*==============================*/
+
+[class*="__container"] {
+	padding: 0 15px;
+}
+[class*="__content"] {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+	padding: 80px 0;
+}
+.car__content {
+	max-width: 750px;
+}
+.ufo {
+	position: relative;
+	/*transition: 10s ease 0s;*/
+}
+.ufo__top,
+.ufo__middle,
+.ufo__bottom {
+	overflow: hidden;
+	position: relative;
+	perspective-origin: center;
+	perspective: 100px;
+	border: 1px solid #000;
+}
+.ufo__bottom {
+	overflow: visible;
+}
+
+.ufo__top {
+	z-index: 3;
+	top: 22px;
+	left: 225px;
+	width: 300px;
+	height: 180px;
+	border-radius: 50% 50% 50% 50%/80% 80% 5% 5%;
+	background-color: rgba(96, 229, 247, 0.501);
+}
+.ufo__middle {
+	z-index: 1;
+	width: 750px;
+	height: 150px;
+	border-radius: 50% 50% 0% 0%/100% 100% 0% 0%;
+	background-color: rgb(194, 194, 194);
+}
+.ufo__bottom {
+	z-index: 2;
+	top: -16px;
+	left: 0;
+	width: 750px;
+	height: 105px;
+	border-radius: 60% 60% 60% 60%/20% 20% 100% 100%;
+	background-color: rgb(104, 104, 104);
+}
+
+/*===========ufo top elements==========*/
+.ufo__cincture {
+	z-index: 2;
+	position: relative;
+	left: 0;
+	top: 158px;
+	width: 300px;
+	height: 20px;
+	background-color: rgb(104, 104, 104);
+}
+.ufo__glare {
+	z-index: 2;
+	opacity: 0.7;
+	position: absolute;
+	right: 76px;
+	top: 6px;
+	transform: rotate(11deg);
+	width: 100px;
+	height: 30px;
+	border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+	background-color: #fff;
+}
+.ufo__characters {
+	z-index: 1;
+	opacity: 0.7;
+	position: absolute;
+	left: 60px;
+	bottom: 0;
+	max-width: 170px;
+}
+.ufo__characters img {
+	overflow: hidden;
+	width: 100%;
+}
+
+/*===========ufo middle elements==========*/
+.ufo__body-line-01,
+.ufo__body-line-02,
+.ufo__body-line-03 {
+	position: absolute;
+	transform: rotateX(35deg);
+	height: 200px;
+	width: 30px;
+	border: 1px solid #000;
+	background-color: rgb(255, 255, 80);
+	/*box-shadow: yellow 0 0 20px;*/
+}
+.ufo__body-line-01 {
+	top: -28px;
+	left: 365px;
+}
+.ufo__body-line-02 {
+	top: -36px;
+	left: 160px;
+}
+.ufo__body-line-03 {
+	top: -36px;
+	right: 160px;
+}
+
+.ufo__headlight-01,
+.ufo__headlight-02 {
+	position: absolute;
+	top: 60px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	background-color: rgb(194, 200, 27);
+}
+.ufo__headlight-01 {
+	left: 200px;
+}
+.ufo__headlight-02 {
+	right: 200px;
+}
+.ufo__headlight-01::before,
+.ufo__headlight-02::before {
+	content: "";
+	position: relative;
+	top: 9px;
+	left: 9px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	background-color: rgb(249, 253, 136);
+}
+
+/*===========ufo engine================*/
+.ufo__engine-01,
+.ufo__engine-02 {
+	position: absolute;
+}
+.ufo__engine-01 {
+	top: 100px;
+	left: 30px;
+}
+.ufo__engine-02 {
+	top: 100px;
+	right: 30px;
+}
+
+.ufo__engine-block-01 {
+	position: relative;
+	z-index: 2;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #000;
+	border-radius: 50%;
+	background-color: rgb(135, 127, 112);
+}
+.ufo__engine-block-01::before {
+	content: "";
+	position: relative;
+	top: 6px;
+	left: 6px;
+	width: 85px;
+	height: 85px;
+	border: #000 1px dashed;
+	border-left: none;
+	border-bottom: none;
+	border-radius: 50%;
+}
+.ufo__engine-block-02-left,
+.ufo__engine-block-02-right {
+	z-index: 1;
+	position: absolute;
+	top: 16px;
+}
+.ufo__engine-block-02-left {
+	right: -5px;
+}
+.ufo__engine-block-02-right {
+	left: -5px;
+}
+.ufo__engine-element {
+	position: absolute;
+	top: 0;
+	transform: rotate(0deg);
+	width: 20px;
+	height: 80px;
+	border-top: 1px solid #000;
+	border-radius: 50% 50% 50% 50% / 10% 10% 10% 10%;
+	background-color: rgb(135, 116, 82);
+}
+.ufo__engine-block-02-left > .ufo__engine-element {
+	transform-origin: bottom right;
+	right: 0;
+}
+.ufo__engine-block-02-left > .ufo__engine-element:nth-child(2) {
+	transform: rotate(15deg);
+	top: 4px;
+}
+.ufo__engine-block-02-left > .ufo__engine-element:nth-child(3) {
+	transform: rotate(30deg);
+	top: 8px;
+}
+.ufo__engine-block-02-left > .ufo__engine-element:nth-child(4) {
+	transform: rotate(45deg);
+	top: 12px;
+}
+.ufo__engine-block-02-left > .ufo__engine-element:nth-child(5) {
+	transform: rotate(60deg);
+	top: 16px;
+}
+.ufo__engine-block-02-left > .ufo__engine-element:nth-child(6) {
+	transform: rotate(75deg);
+	top: 20px;
+}
+
+.ufo__engine-block-02-right > .ufo__engine-element {
+	transform-origin: bottom left;
+	left: 0;
+}
+.ufo__engine-block-02-right > .ufo__engine-element:nth-child(2) {
+	transform: rotate(-15deg);
+	top: 4px;
+}
+.ufo__engine-block-02-right > .ufo__engine-element:nth-child(3) {
+	transform: rotate(-30deg);
+	top: 8px;
+}
+.ufo__engine-block-02-right > .ufo__engine-element:nth-child(4) {
+	transform: rotate(-45deg);
+	top: 12px;
+}
+.ufo__engine-block-02-right > .ufo__engine-element:nth-child(5) {
+	transform: rotate(-60deg);
+	top: 16px;
+}
+.ufo__engine-block-02-right > .ufo__engine-element:nth-child(6) {
+	transform: rotate(-75deg);
+	top: 20px;
+}
+
+/*=============ufo bottom=================*/
+
+.ufo__wheel {
+	z-index: 3;
+	position: absolute;
+	bottom: -60px;
+	width: 50px;
+	height: 130px;
+	border-radius: 50% 50% 50% 50% / 8% 8% 8% 8%;
+	background-color: #3c3c3c;
+}
+.ufo__wheel::before,
+.ufo__wheel::after {
+	content: "";
+	position: relative;
+	border-radius: 50px;
+	background-color: #c1c1c1;
+}
+.ufo__wheel::before {
+	top: 12px;
+	left: 14px;
+	width: 5px;
+	height: 80px;
+}
+.ufo__wheel::after {
+	top: 30px;
+	left: 25px;
+	width: 5px;
+	height: 50px;
+}
+
+.ufo__wheel--left {
+	left: 120px;
+}
+.ufo__wheel--right {
+	right: 120px;
+}
+
+.ufo__bottom-element {
+	position: absolute;
+	left: 226px;
+	bottom: -30px;
+	z-index: 3;
+	width: 300px;
+	height: 100px;
+	border: 1px solid #000;
+	border-radius: 50% 50% 50% 50%/10% 10% 90% 90%;
+	background-color: rgb(74, 74, 74);
+}
+
+/*===========cube============*/
+
+.transform-3d__container--margin {
+	margin-bottom: 50px;
+}
+.transform-3d__content {
+	padding: 50px 20px;
+	border: 1px solid #737373;
+	max-width: 300px;
+	font-size: 0;
+}
+
+.transform-3d__figure-wrapper {
+	display: inline-block;
+	perspective: 800px;
+	padding-left: 25px;
+}
+.cube {
+	position: relative;
+	transform-style: preserve-3d;
+	height: 200px;
+	width: 200px;
+	/*==============*/
+	transition: all 0.8s ease 0s;
+}
+.cube__top,
+.cube__bottom,
+.cube__front,
+.cube__back,
+.cube__left,
+.cube__right {
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	border: 1px solid #737373;
+	box-shadow: inset 0 0 30px rgba(92, 136, 254, 1);
+	background-color: rgba(92, 136, 254, 0.404);
+}
+.cube__top {
+	transform: rotateX(90deg) translateZ(100px);
+}
+.cube__bottom {
+	transform: rotateX(-90deg) translateZ(100px);
+}
+.cube__front {
+	transform: translateZ(100px);
+}
+.cube__back {
+	transform: rotateY(180deg) translateZ(100px);
+}
+.cube__left {
+	transform: rotateY(-90deg) translateZ(100px);
+}
+.cube__right {
+	transform: rotateY(90deg) translateZ(100px);
+}
+
+/*=============keyframes=============*/
+
+@keyframes ufo-flight {
+	0% {
+	}
+	100% {
+	}
+}
+@keyframes glare-move {
+	0% {
+	}
+	100% {
+	}
+}
+@keyframes engine-work {
+	0% {
+	}
+	100% {
+	}
+}
+@keyframes rotate {
+	0% {
+	}
+	100% {
+	}
+}
+@keyframes engine-element-work {
+	0% {
+	}
+	100% {
+	}
+}
+@keyframes wheel-move {
+	0% {
+	}
+	100% {
+	}
+}
