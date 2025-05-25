@@ -127,8 +127,10 @@ body {
 }
 .california__title {
 	font-size: 34px;
+	line-height: 1.2;
 }
 .california__text {
+	margin-bottom: 15px;
 	font-size: 22px;
 }
 .california__list {
