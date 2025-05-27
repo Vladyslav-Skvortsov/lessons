@@ -68,6 +68,10 @@ body {
 	padding-bottom: 80px;
 	line-height: 1.5;
 }
+::placeholder,
+select {
+	font-family: "Poppins", "Arial", sans-serif;
+}
 .form input,
 .form textarea,
 .form select {
@@ -94,7 +98,6 @@ body {
 .form input::placeholder,
 .form textarea::placeholder {
 	transition: opacity 0.2s ease;
-
 	color: #999;
 }
 .form select > option {
@@ -239,7 +242,16 @@ body {
 	align-items: center;
 	gap: 6px;
 }
-.product__link:focus {
+.product__link {
+	overflow: hidden;
+	border: 1px solid transparent;
+	transition: border-color 0.3s ease;
+	border-radius: 6px;
+}
+.product__link:hover {
+	border: 1px solid #2c742f;
+}
+.product__link:focus-visible {
 	outline: 2px solid #00b207;
 }
 .product {
