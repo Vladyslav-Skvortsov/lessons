@@ -1,0 +1,340 @@
+@import url("normalize.css");
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+	font-family: "Poppins", "Arial", sans-serif;
+}
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.wrapper > main {
+	flex: 1 0 auto;
+}
+.header {
+	padding: 30px 0;
+	background-color: blanchedalmond;
+}
+.header--margin {
+	margin-bottom: 30px;
+}
+.header__title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.footer {
+	padding: 20px 0;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	background-color: lightblue;
+}
+
+/*==============================*/
+
+[class$="__container"] {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1350px; /* +30px padding */
+	width: 100%;
+}
+[class$="__content"] {
+}
+[class$="__img-container"] {
+	overflow: hidden;
+	display: block;
+}
+[class$="--visually-hidden"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+	/*clip-path: inset(100%);*/
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/*==============form===============*/
+
+.form {
+	padding-bottom: 80px;
+	line-height: 1.5;
+}
+.form input,
+.form textarea,
+.form select {
+	height: 49px;
+	padding: 14px 16px;
+	border-radius: 6px;
+	border: 1px solid #e6e6e6;
+	font-size: 16px;
+	line-height: 1.3;
+}
+.form select {
+	appearance: none;
+	background-image: url("../img/arrow.svg");
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+	background-size: 16px;
+	padding-right: 40px; /* 16px + 24px для arrow */
+}
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+	outline: 2px solid #00b207;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+	transition: opacity 0.2s ease;
+
+	color: #999;
+}
+.form select > option {
+	color: #999;
+}
+.form input:focus::placeholder,
+.form textarea:focus::placeholder {
+	opacity: 0;
+}
+.form textarea {
+	min-height: 100px;
+}
+.form__row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+.form__column {
+	flex: 1 1 auto;
+}
+.info {
+	flex-basis: 872px;
+}
+.order {
+	flex: 1 0 424px;
+	align-self: flex-start;
+}
+
+/*==============form info===============*/
+
+.info {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.info h2 {
+	margin-bottom: 4px; /* 20px - 16px gap */
+	font-size: 24px;
+	font-weight: 500;
+}
+.info label {
+	margin-bottom: 8px;
+}
+.info__user,
+.info__region,
+.info__contacts {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+.info__user > li,
+.info__region > li,
+.info__contacts > li {
+	flex: 1 1 0;
+	min-width: 280px;
+}
+.info__region li {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.info__region li > label {
+	margin-bottom: 0;
+}
+.info__dif-address {
+	margin-bottom: 0;
+	padding-top: 4px;
+}
+.info__dif-address label {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	cursor: pointer;
+}
+.info__dif-address label::before {
+	content: "";
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #e6e6e6;
+	border-radius: 4px;
+}
+.info__dif-input:checked + label::before {
+	border-color: #00b207;
+	background-image: url("../img/check.svg");
+	background-color: #00b207;
+}
+.info__dif-input:focus-visible + label {
+	outline: 2px solid #00b207;
+	outline-offset: 2px;
+}
+/* ! щось мені підказує що не слід було так робити */
+.info:has(> .info__add-info:last-child) > :nth-last-child(2) {
+	padding-bottom: 32px;
+	margin-bottom: 16px; /* 32px - 16px gap */
+	border-bottom: 1px solid #e6e6e6;
+}
+.info__add-info h2 {
+	margin-bottom: 20px;
+}
+.info__add-info textarea {
+	resize: vertical;
+}
+
+/*==============form order===============*/
+
+.order {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 24px;
+
+	border: 1px solid #e6e6e6;
+	border-radius: 8px;
+	padding: 24px;
+
+	color: #1a1a1a;
+}
+.order h2 {
+	font-size: 20px;
+	font-weight: 500;
+}
+.order__basket,
+.order__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.order__basket {
+	gap: 12px;
+}
+.order__list {
+	gap: 5px;
+}
+.product,
+.product__item,
+.product__link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 6px;
+}
+.product__link:focus {
+	outline: 2px solid #00b207;
+}
+.product {
+	gap: 10px;
+}
+.product__img-container {
+	flex: 0 0 60px;
+}
+.product__price,
+.result__sum {
+	font-weight: 500;
+}
+.result > :not(:last-child) {
+	border-bottom: 1px solid #e6e6e6;
+}
+.result__subtotal,
+.result__shipping,
+.result__total {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 0;
+}
+.result__operation-name {
+	color: #4d4d4d;
+}
+.result__total .result__sum {
+	font-size: 18px;
+	font-weight: 600;
+}
+.result__total {
+	padding-bottom: 0;
+}
+.payment h3 {
+	margin-bottom: 16px;
+	font-weight: 500;
+	font-size: 20px;
+}
+.payment__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 10px;
+}
+.payment__item {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	cursor: pointer;
+	color: #4d4d4d;
+}
+.payment__item::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 1px solid #00b207;
+	border-radius: 50%;
+}
+.payment__item::after {
+	content: "";
+	opacity: 0;
+	position: absolute;
+	left: 3px;
+	top: 5px;
+	transition: opacity 0.2s ease;
+	width: 14px;
+	height: 14px;
+	background-color: #00b207;
+	border-radius: 50%;
+}
+.payment__input-radio:checked + .payment__item::after {
+	opacity: 1;
+}
+.payment__input-radio:disabled + .payment__item::before {
+	border: 1px solid #e6e6e6;
+}
+.payment__input-radio:focus-visible + .payment__item {
+	outline: 2px solid #00b207;
+	outline-offset: 2px;
+}
+
+.order__button {
+	flex: 1 1 0;
+	border-radius: 43px;
+	padding: 16px 40px;
+	transition: background-color 0.3s ease;
+	text-align: center;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #fff;
+	background-color: #00b207;
+}
+.order__button:hover {
+	background-color: #2c742f;
+}
