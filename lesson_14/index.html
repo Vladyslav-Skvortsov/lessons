@@ -51,8 +51,8 @@
 										<ul class="info__region">
 											<li>
 												<label for="country">Country / Region</label>
-												<select name="form[country]" id="country">
-													<option value="default">Select</option>
+												<select name="form[country]" id="country" required>
+													<option value disabled selected hidden>Select</option>
 													<option value="country_01">Country_01</option>
 													<option value="country_02">Country_02</option>
 													<option value="country_03">Country_03</option>
@@ -61,8 +61,8 @@
 											</li>
 											<li>
 												<label for="state">States</label>
-												<select name="form[state]" id="state">
-													<option value="default">Select</option>
+												<select name="form[state]" id="state" required>
+													<option value disabled selected hidden>Select</option>
 													<option value="state_01">State_01</option>
 													<option value="statey_02">State_02</option>
 													<option value="state_03">State_03</option>
@@ -182,7 +182,7 @@
 													class="payment__input-radio payment__input-radio--visually-hidden"
 													type="radio"
 													name="form[payment]"
-													value="amazonPay" disabled>
+													value="amazonPay">
 												<label for="paymentAmazon" class="payment__item">
 													Amazon Pay
 												</label>
