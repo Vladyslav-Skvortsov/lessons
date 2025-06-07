@@ -455,11 +455,27 @@ body {
 	}
 }
 @media (max-width: 767.98px) {
+	.featured__content {
+		margin-bottom: 30px;
+	}
 	.latest-news__item {
 		flex: 0 1 90%;
 	}
+	.card__tag-container {
+		font-size: 14px;
+	}
 }
 @media (max-width: 479.98px) {
+	.featured__header,
+	.latest-news__title {
+		margin-bottom: 16px;
+	}
+	.featured__content {
+		margin-bottom: 20px;
+	}
+	.title {
+		font-size: 24px;
+	}
 	.tag-meta {
 		flex-direction: column;
 	}
@@ -484,6 +500,9 @@ body {
 	}
 	.when__month {
 		font-size: 10px;
+	}
+	.news-card__link-more {
+		font-size: 14px;
 	}
 }
 /*=====================================*/
