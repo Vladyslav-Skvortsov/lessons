@@ -224,11 +224,14 @@ body {
 	flex: 0 0 20px;
 	transition: color 0.3s ease;
 }
-.card__basket:hover {
+.card:hover .card__basket svg {
+	color: #fff;
+}
+.card:hover .card__basket {
 	background-color: #00b207;
 }
-.card__basket:hover svg {
-	color: #fff;
+.card:hover .card__basket:hover {
+	background-color: #2c742f;
 }
 
 /*=============card tag & action-buttons=============*/
@@ -383,9 +386,12 @@ body {
 .tag-meta__item:hover {
 	border-bottom-color: #808080;
 }
-.tag-meta__item span {
+.tag-meta__item {
 	font-size: 14px;
 	color: #666;
+}
+.tag-meta__emphasized-text {
+	color: #4d4d4d;
 }
 .news-card__title {
 	flex: 1 1 auto;
@@ -491,5 +497,12 @@ body {
 	.card__action-buttons {
 		opacity: 1;
 		visibility: visible;
+	}
+
+	.card .card__basket {
+		background-color: #00b207;
+	}
+	.card .card__basket svg {
+		color: #fff;
 	}
 }
