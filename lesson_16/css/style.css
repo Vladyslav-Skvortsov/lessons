@@ -85,6 +85,9 @@ body {
 	align-items: center;
 	column-gap: 8px;
 }
+.logo a {
+	flex-shrink: 0;
+}
 .logo__img {
 	position: relative;
 	z-index: 10;
@@ -143,6 +146,7 @@ body {
 }
 .header__text-button::after {
 	content: "";
+	flex-shrink: 0;
 	width: 24px;
 	height: 24px;
 	background: url("../img/ph_arrow-down-bold.svg") no-repeat center;
