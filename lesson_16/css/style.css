@@ -169,6 +169,7 @@ body {
 	transition: transform 0.3s;
 	will-change: transform;
 	transform-origin: center;
+	transform: translateY(0px) rotate(0deg);
 }
 .menu-burger span {
 	top: 50%;
