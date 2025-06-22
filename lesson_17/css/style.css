@@ -788,11 +788,9 @@ header .header__title {
 }
 
 .catalogue__more {
+	grid-column: 1;
 	order: 999;
 	padding-bottom: 48px;
-}
-.catalogue:has(.item:nth-child(n + 8)) .catalogue__more {
-	justify-self: center;
 }
 
 @media (max-width: 1199.98px) {
