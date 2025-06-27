@@ -11,17 +11,310 @@
 	<body>
 		<div class="wrapper">
 			<header class="header header--margin">
-				<h1 class="header__title">HW18</h1>
+				<div class="header__container">
+					<h1 class="header__title">HW18</h1>
+				</div>
 			</header>
 
-			<main>
+			<main class="main">
+				<div class="main__container">
+					<article class="main__article article">
+						<picture class="article__main-img article__main-img--img-container">
+							<source srcset="#" type="image/webp">
+							<img src="#" alt="desc img">
+						</picture>
+						<section class="article__top top">
+							<ul class="top__info">
+								<li>
+									<a href="#">
+										<svg></svg>
+										<span>Food</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg></svg>
+										<span>By Admin</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg></svg>
+										<span>65 Comments</span>
+									</a>
+								</li>
+							</ul>
+							<h2>
+								Maecenas tempor urna sed quam mollis, a placerat dui fringill
+								Suspendisse.
+							</h2>
+							<div class="top__author author">
+								<div class="author__info">
+									<figure>
+										<img src="#" alt="desc img">
+										<figcaption>
+											<h3>
+												Cameron Williamson
+											</h3>
+										</figcaption>
+									</figure>
+									<div class="author__additional-info">
+										<time datetime="2021-04-04">4 April, 2021</time>
+										<span>• 6 min read</span>
+									</div>
+								</div>
+								<ul class="author__social-links">
+									<li class="author__facebook-link">
+										<a href="#">
+											<svg></svg>
+										</a>
+									</li>
+									<li class="author__twitter-link">
+										<a href="#">
+											<svg></svg>
+											<span></span>
+										</a>
+									</li>
+									<li class="author__pinterest-link">
+										<a href="#">
+											<svg></svg>
+											<span></span>
+										</a>
+									</li>
+									<li class="author__instagram-link">
+										<a href="#">
+											<svg></svg>
+											<span></span>
+										</a>
+									</li>
+									<li class="author__link">
+										<a href="#">
+											<svg></svg>
+											<span></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</section>
+						<section class="article__content content">
+							<h3>
+								Maecenas lacinia felis nec placerat sollicitudin. Quisque placerat dolor
+								at scelerisque imperdiet. Phasellus tristique felis dolor.
+							</h3>
+							<p>
+								Maecenas elementum in risus sed condimentum. Duis convallis ante ac
+								tempus maximus. Fusce malesuada sed velit ut dictum. Morbi faucibus
+								vitae orci at euismod. Integer auctor augue in erat vehicula, quis
+								fermentum ex finibus.
+							</p>
+							<p>
+								Mauris pretium elit a dui pulvinar, in ornare sapien euismod. Nullam
+								interdum nisl ante, id feugiat quam euismod commodo. Sed ultrices lectus
+								ut iaculis rhoncus. Aenean non dignissim justo, at fermentum turpis. Sed
+								molestie, ligula ut molestie ultrices, tellus ligula viverra neque,
+								malesuada consectetur diam sapien volutpat risus.
+								Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc
+								sit amet erat quis ex convallis suscipit. ur ridiculus mus.
+							</p>
+							<div class="content__images">
+								<picture>
+									<source srcset="#" type="image/webp">
+									<img src="#" alt="desc img">
+								</picture>
+								<picture>
+									<source srcset="#" type="image/webp">
+									<img src="#" alt="desc img">
+								</picture>
+							</div>
+							<p>
+								Sed dictum non nulla eu imperdiet. Duis elit libero, vulputate quis
+								vehicula ut, vestibulum ut mauris. Nullam non felis varius dui rutrum
+								rutrum in a nisi. Suspendisse elementum rutrum lorem sed luctus. Proin
+								iaculis euismod metus non sollicitudin. Duis vel luctus lacus. Nullam
+								faucibus iaculis convallis. In ullamcorper nibh ipsum, eget lacinia eros
+								pulvinar a. Integer accumsan arcu nec faucibus ultricies.
+							</p>
+						</section>
+						<section class="article__banner banner">
+							<picture class="banner__bg-img">
+								<source srcset="#" type="image/webp">
+								<img src="#" alt="desc img">
+							</picture>
+							<div class="banner__info">
+								<h3>
+									Summer Sales
+									<strong>
+										Fresh Fruit
+									</strong>
+									<a class="banner__link" href="#">
+										<span>
+											Shop Now
+										</span>
+										<svg></svg>
+									</a>
+								</h3>
+								<div class="banner__sale sale">
+									<span class="sale__text">up to</span>
+									<span class="sale__percent">56%</span>
+									<span class="sale__text">Off</span>
+								</div>
+							</div>
+						</section>
+						<section class="article__form form">
+							<h3>
+								Leave a Comment
+							</h3>
+							<form action="#" method="post" enctype="multipart/form-data">
+								<div class="form__user">
+									<label class="form__name">
+										<span>Full Name</span>
+										<input type="text" placeholder="Zakir Hossen" name="form[name]"
+											autocomplete="on" required>
+									</label>
+									<label class="form__email">
+										<span>Email</span>
+										<input type="email" placeholder="zakirsoft.20@g|" name="form[email]"
+											autocomplete="on" required>
+									</label>
+								</div>
+								<label class="form__additional-message">
+									<span>Message</span>
+									<textarea name="form[message]" autocomplete="off"></textarea>
+								</label>
+								<label class="form__save-name">
+									<input type="checkbox" name="form[saveName]" value="checkbox">
+									<span>
+										Save my name and email in this browser for the next time I
+										comment.
+									</span>
+								</label>
+								<button class="form__button" type="submit">
+									<span>Post Comments</span>
+								</button>
+							</form>
+						</section>
+						<section class="article__comments comments">
+							<h3>
+								Comments
+							</h3>
+							<ul class="comments__list">
+								<li class="comments__item">
+									<article>
+										<picture>
+											<source srcset="#" type="image/webp">
+											<img src="#" alt="desc img">
+										</picture>
+										<div class="comments__info">
+											<h4>
+												Annette Black
+											</h4>
+											<span>•</span>
+											<time datetime="2021-04-26">26 Apr, 2021</time>
+										</div>
+										<blockquote>
+											In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla
+											volutpat, metus eu aliquam malesuada, elit libero venenatis urna,
+											consequat maximus arcu diam non diam.
+										</blockquote>
+									</article>
+								</li>
+								<li class="comments__item">
+									<article>
+										<picture>
+											<source srcset="#" type="image/webp">
+											<img src="#" alt="desc img">
+										</picture>
+										<div class="comments__info">
+											<h4>
+												Devon Lane
+											</h4>
+											<span>•</span>
+											<time datetime="2021-04-24">24 Apr, 2021</time>
+										</div>
+										<blockquote>
+											Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc
+											sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut
+											aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta
+											nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor
+											eros.
+										</blockquote>
+									</article>
+								</li>
+								<li class="comments__item">
+									<article>
+										<picture>
+											<source srcset="#" type="image/webp">
+											<img src="#" alt="desc img">
+										</picture>
+										<div class="comments__info">
+											<h4>
+												Jacob Jones
+											</h4>
+											<span>•</span>
+											<time datetime="2021-04-20">20 Apr, 2021</time>
+										</div>
+										<blockquote>
+											Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+											posuere cubilia curae.
+										</blockquote>
+									</article>
+								</li>
+								<li class="comments__item">
+									<article>
+										<picture>
+											<source srcset="#" type="image/webp">
+											<img src="#" alt="desc img">
+										</picture>
+										<div class="comments__info">
+											<h4>
+												Jane Cooper
+											</h4>
+											<span>•</span>
+											<time datetime="2021-04-18">18 Apr, 2021</time>
+										</div>
+										<blockquote>
+											Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum
+											elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis
+											turpis ac, volutpat imperdiet ex.
+										</blockquote>
+									</article>
+								</li>
+								<li class="comments__item">
+									<article>
+										<picture>
+											<source srcset="#" type="image/webp">
+											<img src="#" alt="desc img">
+										</picture>
+										<div class="comments__info">
+											<h4>
+												Darrell Steward
+											</h4>
+											<span>•</span>
+											<time datetime="2021-04-07">7 Apr, 2021</time>
+										</div>
+										<blockquote>
+											Nulla molestie interdum ultricies.
+										</blockquote>
+									</article>
+								</li>
+							</ul>
+							<button class="comments__button" type="button">
+								<span>Load More</span>
+							</button>
+						</section>
+					</article>
+					<aside class="main__aside aside">
 
+					</aside>
+				</div>
 			</main>
 
 			<footer class="footer">
-				<span>
-					&copy; Vladyslav Skvortsov
-				</span>
+				<div class="footer__container">
+					<span>
+						&copy; Vladyslav Skvortsov
+					</span>
+				</div>
 			</footer>
 		</div>
 	</body>
