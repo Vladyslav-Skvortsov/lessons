@@ -211,15 +211,15 @@ header .header__title {
 }
 
 /*===================================*/
-@media (min-width: 767.98px) and (max-width: 1199.98px) {
+@media (min-width: 47.998em) and (max-width: 74.998em) {
 }
-@media (max-width: 1199.98px) {
+@media (max-width: 74.998em) {
 }
-@media (max-width: 991.98px) {
+@media (max-width: 61.998em) {
 }
-@media (max-width: 767.98px) {
+@media (max-width: 47.998em) {
 }
-@media (max-width: 479.98px) {
+@media (max-width: 29.998em) {
 }
 /*=====================================*/
 @media (any-hover: hover) {
