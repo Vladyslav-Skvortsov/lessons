@@ -1,0 +1,101 @@
+@use "_normalize";
+@use "_fonts";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carme:wght@400&display=swap");
+
+//html {
+//}
+
+body {
+	font-family: "Poppins", "Arial", sans-serif;
+	color: #1a1a1a;
+	font-size: 0.875rem;
+
+	.wrapper {
+		overflow: clip;
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+	}
+	.wrapper > main {
+		flex: 1 0 auto;
+	}
+}
+
+// ==============================
+
+.header {
+	padding: 1.875rem 0;
+	background-color: lightblue;
+
+	&--margin {
+		margin-bottom: 1.875rem;
+	}
+
+	&__container {
+	}
+
+	&__title {
+		font-size: 1.875rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+.footer {
+	padding: 1.875rem 0;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 400;
+	background-color: lightblue;
+}
+
+// ==============================
+
+[class$="__container"] {
+	margin: 0 auto;
+	padding: 0 0.937rem;
+	max-width: 84.375rem; // +30px(0.937rem * 2) padding
+	width: 100%;
+}
+
+//[class$="__content"] {
+//}
+
+[class$="__img-container"] {
+	overflow: hidden;
+	display: block;
+}
+[class$="--visually-hidden"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+	//clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+// *=============================
+
+// ===================================
+@media (min-width: 47.998em) and (max-width: 74.998em) {
+}
+@media (max-width: 74.998em) {
+}
+@media (max-width: 61.998em) {
+}
+@media (max-width: 47.998em) {
+}
+@media (max-width: 29.998em) {
+}
+// =====================================
+@media (any-hover: hover) {
+}
+@media (any-hover: none) {
+}
