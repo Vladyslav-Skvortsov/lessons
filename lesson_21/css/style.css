@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carme:wght@400&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/*=======label======*/
+label {
+  display: inline-block;
+}
+
+@font-face {
+  font-family: "KoPub Batang";
+  src: url("../fonts/KoPubBatang-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "KoPub Batang";
+  src: url("../fonts/KoPubBatang-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Poppins", "Arial", sans-serif;
+  color: #1a1a1a;
+  font-size: 0.875rem;
+}
+body .wrapper {
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+body .wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.header {
+  padding: 1.875rem 0;
+  background-color: lightblue;
+}
+.header--margin {
+  margin-bottom: 1.875rem;
+}
+.header__title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer {
+  padding: 1.875rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: lightblue;
+}
+
+[class$=__container] {
+  margin: 0 auto;
+  padding: 0 0.937rem;
+  max-width: 84.375rem;
+  width: 100%;
+}
+
+[class$=__img-container] {
+  overflow: hidden;
+  display: block;
+}
+
+[class$="--visually-hidden"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
