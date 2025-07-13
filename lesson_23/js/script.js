@@ -65,6 +65,7 @@ const linkElement = document.querySelector(".main__link");
 linkElement.dataset.value = "100";
 
 const changeLinkColor = (link) => {
+	if (!link) return;
 	const value = Number(link.dataset.value);
 	if (value < 200) link.style.color = "red";
 };
