@@ -132,7 +132,7 @@ body .wrapper > main {
   text-align: center;
 }
 
-.main__item:last-of-type {
+.main__item:last-child {
   margin-bottom: 1rem;
 }
 .main__text {

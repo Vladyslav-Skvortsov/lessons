@@ -8,7 +8,7 @@ const body = document.body;
 
 const container = document.querySelector(".main__container");
 
-const addListToBody = (count = 5) => {
+const addListToContainer = (count = 5) => {
 	if (!container) return;
 
 	const ul = document.createElement("ul");
@@ -25,7 +25,7 @@ const addListToBody = (count = 5) => {
 	container.insertAdjacentElement("afterbegin", ul);
 };
 
-addListToBody(10);
+addListToContainer(10);
 
 // Задача 3
 
